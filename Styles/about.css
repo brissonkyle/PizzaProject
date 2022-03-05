@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #706d6d;
+  background-position: center;
+}
+
+header {
+  font-family: cursive;
+  color: #fff44f;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 30vw;
+  border: 1px solid black;
+  -webkit-box-shadow: 2px 2px black;
+          box-shadow: 2px 2px black;
+  text-align: center;
+}
+
+main p {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100vw;
+  height: 33vh;
+  font-weight: bolder;
+  font-family: cursive;
+  font-size: large;
+  color: #fff44f;
+  text-transform: capitalize;
+}
+
+main p .one {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: 33vw;
+}
+/*# sourceMappingURL=about.css.map */
