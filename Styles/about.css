@@ -6,8 +6,9 @@
 body {
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #706d6d;
+  background-color: #111;
   background-position: center;
+  color: #fff44f;
 }
 
 header {
