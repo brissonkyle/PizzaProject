@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lobster';
+    text-decoration: none;
+}
+
+footer{
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #111;
+    .content{
+        max-width: 1600px;
+        background-color: #111;
+        margin: auto;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        a{
+            color: #fff;
+        }
+        .left-box {
+            width: 33%;
+        }
+        .topic {
+            font-size: 22px;
+            font-weight: 600;
+            color: #fff44f;
+            margin-bottom: 16px;
+        }
+        p {
+            text-align: justify;
+        }
+        .lower{
+            .topic{
+                margin: 24px 0 5px 0;
+            }
+            i{
+                padding-right: 16px;
+            }
+        }
+        .middle-box{
+            padding-left: 35px;
+            .topic{
+                line-height: 32px;
+            }
+        }
+        .right-box{
+            .place{
+                height: 45px;
+                width: 100%;
+                outline: none;
+                color: #fff44f;
+                background-color: #111;
+                border-radius: 5px;
+                padding-left: 10px;
+                font-size: 18px;
+                border: 2px solid #fff44f;
+            }
+            .btn{
+                height: 45px;
+                width: 100%;
+                font-size: 18px;
+                background-color: #111;
+                outline: none;
+                border-radius: 5px;
+                color: #fff44f;
+                letter-spacing: 1px;
+                cursor: pointer;
+                margin-top: 12px;
+                border: 2px solid #fff44f;
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    background-color: maroon;
+
+                }
+            }
+        }
+    }
+}
+
+footer {
+    .bottom{
+    width: 100%;
+    text-align: right;
+    color: #fff44f;
+    padding: 0 40px 5px 0;
+    a{
+        color: #fff;
+    }
+    }
+}
+footer{
+    a{
+        transition: all .5s ease;
+        &:hover{
+            color: #fff44f;
+        }
+    }
+}
+.read-more{
+    background-color: #111;
+    color: #fff44f;
+}

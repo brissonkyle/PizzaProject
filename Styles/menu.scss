@@ -7,14 +7,96 @@ body {
     background-color: #111;
     color: #fff44f;
 }
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 99vw;
+    text-align: center;
+    border: solid #fff44f 2px;
+    background-color: #111;
+}
 
-div{
-    h2 {
-        position: relative;
-        left: 75vw;
-    }
-    p{
-        display: block;
-        position: relative;
+main{
+    img{
+    
+        width: 175px;
     }
 }
+
+.pizza{
+    h1{
+        border-style: solid;
+        border-color: #fff44f;
+        text-align: center;
+    }
+    h2{
+        text-align: end;
+        word-spacing: 30px;
+    }
+    h3 {
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+}
+
+
+.drinks{
+    h1{
+        border-style: solid;
+        border-color: #fff44f;
+        text-align: center;
+    }
+    h2{
+        text-align: end;
+        word-spacing: 30px;
+    }
+    h3 {
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+}
+
+.kids{
+    h1{
+        border-style: solid;
+        border-color: #fff44f;
+        text-align: center;
+    }
+    h2{
+        text-align: end;
+        word-spacing: 30px;
+    }
+    h3 {
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+}
+
+.dessert{
+    h1{
+        border-style: inherit;
+        border-color: #fff44f;
+        text-align: center;
+    }
+    h2{
+        text-align: end;
+        word-spacing: 30px;
+    }
+    h3 {
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+}
+
+
+@import "footer";
+@import "_navMenu"

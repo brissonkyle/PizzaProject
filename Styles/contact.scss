@@ -18,12 +18,6 @@ header {
     left: 30vw;
     text-align: center;
     }
-    .main {
-
-    }
 }
 
-img{
-    position: sticky;
-    left: 33vw;
-}
+@import "_navMenu"

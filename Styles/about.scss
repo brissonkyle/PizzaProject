@@ -22,7 +22,6 @@ header {
 }
 main {
     p{
-        box-sizing: border-box;
         width: 100vw;
         height: 33vh;
         font-weight: bolder;
@@ -31,8 +30,20 @@ main {
         color: #fff44f;
         text-transform: capitalize;
         .one {
-            box-sizing: content-box;
+            position: relative;
             width: 33vw;
+            height: 20vh;
+        }
+        .two{
+            position: relative;
+            width: 33vw;
+            height: 20vh;
+        }
+        .three{
+            position: relative;
+            top: 200px;
         }
     }
 }
+
+@import "navMenu"
