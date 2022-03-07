@@ -1,9 +1,9 @@
 
 .menu-container{
-    position: fixed;
+    position: relative;
     top: 0;
     right: 0;
-    z-index: 2;
+    z-index: 4;
 }
 
 .toggle {
@@ -14,7 +14,7 @@
     height: 60px;
     border-radius: 50%;
     opacity: 0;
-    z-index: 3;
+    z-index: 4;
     cursor: pointer;
 }
 
@@ -29,7 +29,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2;
+    z-index: 3;
     div{
         position: absolute;
         width: 50%;
@@ -83,6 +83,9 @@
 
 .toggle:checked ~ .menu {
     visibility: visible;
+    position: fixed;
+    top: 0;
+    right: 0;
     div{
         transform: translateX(0%) translateY(0%);
         div {
@@ -100,7 +103,7 @@
     visibility: hidden;
     transition: .6s;
     div{
-        position: absolute;
+        position: relative;
         width: 100vw;
         height: 100vh;
         border-radius: 0%;

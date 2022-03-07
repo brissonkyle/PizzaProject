@@ -8,16 +8,6 @@ body {
     color: #fff44f;
 }
 
-header {
-    h1{
-    font-family: cursive;
-    font-size: 3em;
-    color: #fff44f;
-    position: sticky;
-    top: 10px;
-    left: 30vw;
-    text-align: center;
-    }
-}
-
+@import '_header';
+@import '_footer';
 @import "_navMenu"

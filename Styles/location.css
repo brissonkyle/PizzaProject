@@ -1,6 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 * {
   padding: 0;
   margin: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lobster';
+  text-decoration: none;
+}
+
+footer {
+  width: 100vw;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  background-color: #111;
+}
+
+footer .content {
+  max-width: 1600px;
+  background-color: #111;
+  margin: auto;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .content a {
+  color: #fff;
+}
+
+footer .content .left-box {
+  width: 33%;
+}
+
+footer .content .topic {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff44f;
+  margin-bottom: 16px;
+}
+
+footer .content p {
+  text-align: justify;
+  color: #fff44f;
+}
+
+footer .content .lower .topic {
+  margin: 24px 0 5px 0;
+}
+
+footer .content .lower i {
+  padding-right: 16px;
+}
+
+footer .content .middle-box {
+  padding-left: 35px;
+}
+
+footer .content .middle-box .topic {
+  line-height: 32px;
+}
+
+footer .content .right-box .place {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  color: #fff44f;
+  background-color: #111;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 18px;
+  border: 2px solid #fff44f;
+}
+
+footer .content .right-box .btn {
+  height: 45px;
+  width: 100%;
+  font-size: 18px;
+  background-color: #111;
+  outline: none;
+  border-radius: 5px;
+  color: #fff44f;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 12px;
+  border: 2px solid #fff44f;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .content .right-box .btn:hover {
+  background-color: maroon;
+}
+
+footer .bottom {
+  width: 100%;
+  text-align: right;
+  color: #fff44f;
+  padding: 0 40px 5px 0;
+}
+
+footer .bottom a {
+  color: #fff;
+}
+
+footer a {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+footer a:hover {
+  color: #fff44f;
+}
+
+.read-more {
+  background-color: #111;
+  color: #fff44f;
 }
 
 body {
@@ -13,11 +137,33 @@ iframe {
   width: 100vw;
 }
 
-.menu-container {
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.header .sticky {
   position: fixed;
   top: 0;
+  height: 10vh;
+  width: 100vw;
+  z-index: 3;
+  -webkit-box-shadow: #111 10px;
+          box-shadow: #111 10px;
+  background-color: #111;
+}
+
+.header .sticky h1 {
+  font-size: xx-large;
+  color: #fff44f;
+  margin: 0;
+}
+
+.menu-container {
+  position: relative;
+  top: 0;
   right: 0;
-  z-index: 2;
+  z-index: 4;
 }
 
 .toggle {
@@ -28,7 +174,7 @@ iframe {
   height: 60px;
   border-radius: 50%;
   opacity: 0;
-  z-index: 3;
+  z-index: 4;
   cursor: pointer;
 }
 
@@ -49,7 +195,7 @@ iframe {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 2;
+  z-index: 3;
 }
 
 .hamburger div {
@@ -108,6 +254,9 @@ iframe {
 
 .toggle:checked ~ .menu {
   visibility: visible;
+  position: fixed;
+  top: 0;
+  right: 0;
 }
 
 .toggle:checked ~ .menu div {
@@ -131,7 +280,7 @@ iframe {
 }
 
 .menu div {
-  position: absolute;
+  position: relative;
   width: 100vw;
   height: 100vh;
   border-radius: 0%;

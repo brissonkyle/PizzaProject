@@ -1,7 +1,25 @@
-header {
-    position: sticky;
-    top: 0px;
-    text-align: center;
-    border: solid #fff44f;
-    background-color: #111;
+* {
+    padding: 0;
+    margin: 0;
 }
+
+.header{
+    .sticky{
+        position: fixed;
+        top: 0;
+        height: 10vh;
+        width: 100vw;
+        z-index: 3;
+        box-shadow: #111 10px;
+        background-color: #111;
+        h1{
+            font-size: xx-large;
+            color: #fff44f;
+            margin: 0;
+        }
+    }
+}
+
+
+
+

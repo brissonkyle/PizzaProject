@@ -10,7 +10,7 @@
 
 footer{
     width: 100vw;
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 0;
     background-color: #111;
@@ -36,6 +36,7 @@ footer{
         }
         p {
             text-align: justify;
+            color: #fff44f;
         }
         .lower{
             .topic{
