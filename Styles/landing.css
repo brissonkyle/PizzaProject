@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -55,6 +56,204 @@ body {
 
 .showcase .button:hover {
   background-color: #fff44f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+}
+
+body .input .toggle {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-container {
+  position: relative;
+  top: 0;
+  right: 0;
+  z-index: 4;
+}
+
+.toggle {
+  position: absolute;
+  top: .5px;
+  right: .5px;
+  width: 100vw;
+  height: 60px;
+  border-radius: 50%;
+  opacity: 0;
+  z-index: 4;
+  cursor: pointer;
+}
+
+.hamburger {
+  position: absolute;
+  top: 0.5px;
+  right: 0.5px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: #fff44f 2px solid;
+  background-color: #111;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 3;
+}
+
+.hamburger div {
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  border-radius: 1.5px;
+  background-color: #fff44f;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.hamburger div::before {
+  content: '';
+  top: -10px;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  border-radius: 1.5px;
+  background-color: #fff44f;
+}
+
+.hamburger div::after {
+  content: '';
+  top: 10px;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  border-radius: 1.5px;
+  background-color: #fff44f;
+}
+
+.toggle:checked + .hamburger div {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.toggle:checked + .hamburger div::after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  top: 0;
+}
+
+.toggle:checked + .hamburger div::before {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  top: 0;
+}
+
+.toggle:checked:hover + .hamburger div {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.toggle:checked ~ .menu {
+  visibility: visible;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+}
+
+.toggle:checked ~ .menu div {
+  width: 100vw;
+  -webkit-transform: translateX(0%) translateY(0%);
+          transform: translateX(0%) translateY(0%);
+}
+
+.toggle:checked ~ .menu div div {
+  width: 100vw;
+  opacity: 1;
+}
+
+.menu {
+  position: fixed;
+  left: 0px;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  visibility: hidden;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.menu div {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  border-radius: 0%;
+  -webkit-transform: translateX(-100%) translateY(100%);
+          transform: translateX(-100%) translateY(100%);
+  background-color: rgba(0, 0, 0, 0.9);
+  -webkit-transition: .6s;
+  transition: .6s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu div div {
+  width: 100vw;
+  max-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  left: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  opacity: 0;
+}
+
+.menu div div ul li {
+  width: 100vw;
+  list-style: none;
+}
+
+.menu div div ul li a {
+  text-decoration: none;
+  margin: 0;
+  width: 100vw;
+  display: block;
+  font-weight: 550;
+  text-transform: uppercase;
+  color: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.menu div div ul li a:hover {
+  color: #fff44f;
 }
 
 * {
@@ -177,5 +376,111 @@ footer a:hover {
 .read-more {
   background-color: #111;
   color: #fff44f;
+}
+
+@media only screen and (min-width: 700px) {
+  * {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lobster';
+    text-decoration: none;
+  }
+  footer {
+    width: 100vw;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    background-color: #111;
+  }
+  footer .content {
+    max-width: 1600px;
+    background-color: #111;
+    margin: auto;
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .content a {
+    color: #fff;
+  }
+  footer .content .left-box {
+    width: 33%;
+  }
+  footer .content .topic {
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff44f;
+    margin-bottom: 16px;
+  }
+  footer .content p {
+    text-align: justify;
+    color: #fff44f;
+  }
+  footer .content .lower .topic {
+    margin: 24px 0 5px 0;
+  }
+  footer .content .lower i {
+    padding-right: 16px;
+  }
+  footer .content .middle-box {
+    padding-left: 35px;
+  }
+  footer .content .middle-box .topic {
+    line-height: 32px;
+  }
+  footer .content .right-box .place {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    color: #fff44f;
+    background-color: #111;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 18px;
+    border: 2px solid #fff44f;
+  }
+  footer .content .right-box .btn {
+    height: 45px;
+    width: 100%;
+    font-size: 18px;
+    background-color: #111;
+    outline: none;
+    border-radius: 5px;
+    color: #fff44f;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 12px;
+    border: 2px solid #fff44f;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  footer .content .right-box .btn:hover {
+    background-color: maroon;
+  }
+  footer .bottom {
+    width: 100vw;
+    color: #fff44f;
+    padding: 0 0px 5px 0;
+  }
+  footer .bottom a {
+    color: #fff;
+  }
+  footer a {
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+  footer a:hover {
+    color: #fff44f;
+  }
+  .read-more {
+    background-color: #111;
+    color: #fff44f;
+  }
 }
 /*# sourceMappingURL=landing.css.map */

@@ -12,6 +12,11 @@
         z-index: 3;
         box-shadow: #111 10px;
         background-color: #111;
+        img{
+            position: fixed;
+            width: 45px;
+            height: 45px;
+        }
         h1{
             font-size: xx-large;
             color: #fff44f;

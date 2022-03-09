@@ -21,4 +21,8 @@ iframe{
 }
 @import '_footer';
 @import '_header';
-@import "_navMenu"
+@import "_navMenu";
+
+@media only screen and (min-width: 700px) {
+    @import '_footer';
+}

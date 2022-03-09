@@ -4,19 +4,38 @@
 }
 
 main{
+    header{
+        font-size: x-large;
+        line-height: 3;
+        text-align: center
+    }
+    p{
+        line-height: 1.75;
+    }
+    article{
+        h1{
+            text-align: center;
+            text-shadow: #f83a00dc 2px 2px;
+        }
+        img{
+            position: relative;
+            float: right;
+            width: 100vw;
+        }
+    }
     position: relative;
     top: 45px;
     justify-content: center;
     background-color: #111;
     color: #fff44f;
-    height: 100vh;
-    header{
-        text-align: center
-    }
+    height: 450vh;
 }
 
 @import '_footer';
 @import '_header';
-@import "navMenu"
+@import "navMenu";
 
+@media only screen and (min-width: 700px) {
+    @import '_footer';
+}
 

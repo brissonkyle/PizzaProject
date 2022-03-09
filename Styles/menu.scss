@@ -12,6 +12,7 @@ main{
     img{
         width: 100vw;
         height: 300px;
+        padding-top: 10px;
     }
 }
 
@@ -87,9 +88,23 @@ main{
         text-shadow: #f83a00dc 2px 2px 2px;
     }
 }
+
+
 @import '_header';
 @import "footer";
-@import '_navMenu'
+@import '_navMenu';
+
+@media only screen and (min-width: 700px) {
+
+    main{
+        img{
+            width: 50vw;
+        }
+    }
 
 
+    @import '_header';
+    @import "footer";
+    @import '_navMenu';
+}
 
