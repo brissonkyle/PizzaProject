@@ -79,7 +79,6 @@ footer{
                 transition: all 0.3s ease-in-out;
                 &:hover{
                     background-color: maroon;
-
                 }
             }
         }
@@ -88,10 +87,9 @@ footer{
 
 footer {
     .bottom{
-    width: 100%;
-    text-align: right;
+    width: 100vw;
     color: #fff44f;
-    padding: 0 40px 5px 0;
+    padding: 0 0px 5px 0;
     a{
         color: #fff;
     }

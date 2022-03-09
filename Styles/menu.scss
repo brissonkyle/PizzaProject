@@ -7,20 +7,11 @@ body {
     background-color: #111;
     color: #fff44f;
 }
-header {
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 99vw;
-    text-align: center;
-    border: solid #fff44f 2px;
-    background-color: #111;
-}
 
 main{
     img{
-    
-        width: 175px;
+        width: 100vw;
+        height: 300px;
     }
 }
 
@@ -29,16 +20,16 @@ main{
         border-style: solid;
         border-color: #fff44f;
         text-align: center;
-    }
-    h2{
-        text-align: end;
-        word-spacing: 30px;
+        text-shadow: #f83a00dc 4px 4px;
     }
     h3 {
         text-align: center;
+        font-size: x-large;
+        text-shadow: #f83a00dc 4px 4px 4px;
     }
     p{
         text-align: center;
+        text-shadow: #f83a00dc 2px 2px 2px;
     }
 }
 
@@ -48,16 +39,16 @@ main{
         border-style: solid;
         border-color: #fff44f;
         text-align: center;
-    }
-    h2{
-        text-align: end;
-        word-spacing: 30px;
+        text-shadow: #f83a00dc 4px 4px;
     }
     h3 {
         text-align: center;
+        font-size: x-large;
+        text-shadow: #f83a00dc 4px 4px 4px;
     }
     p{
         text-align: center;
+        text-shadow: #f83a00dc 2px 2px 2px;
     }
 }
 
@@ -66,37 +57,39 @@ main{
         border-style: solid;
         border-color: #fff44f;
         text-align: center;
-    }
-    h2{
-        text-align: end;
-        word-spacing: 30px;
+        text-shadow: #f83a00dc 4px 4px;
     }
     h3 {
         text-align: center;
+        font-size: x-large;
+        text-shadow: #f83a00dc 4px 4px 4px;
     }
     p{
         text-align: center;
+        text-shadow: #f83a00dc 2px 2px 2px;
     }
 }
 
 .dessert{
     h1{
-        border-style: inherit;
+        border: solid;
         border-color: #fff44f;
         text-align: center;
-    }
-    h2{
-        text-align: end;
-        word-spacing: 30px;
+        text-shadow: #f83a00dc 4px 4px;
     }
     h3 {
         text-align: center;
+        font-size: x-large;
+        text-shadow: #f83a00dc 4px 4px 4px;
     }
     p{
         text-align: center;
+        text-shadow: #f83a00dc 2px 2px 2px;
     }
 }
-
-
+@import '_header';
 @import "footer";
-@import "_navMenu"
+@import '_navMenu'
+
+
+
