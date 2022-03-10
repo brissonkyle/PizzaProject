@@ -3,29 +3,62 @@
     padding: 0;
 }
 
+body{
+    height: 300vh;
+}
+
 main{
+    height: 300vh;
     header{
-        font-size: x-large;
+        padding-top: 30px;
+        font-size: xx-large;
+        text-shadow: #f83a00dc 2px 2px;
         line-height: 3;
         text-align: center
     }
     p{
         line-height: 1.75;
     }
+    .description{
+        font-size: larger;
+        text-shadow: #f83a00dc 2px 2px 2px;
+        padding-bottom: 30px;
+        .roots{
+            padding-bottom: 20px;
+            text-align: center;
+        }
+        .one{
+            padding-bottom: 20px;
+            text-align: center;
+        }
+        .two{
+            padding-bottom: 20px;
+            text-align: center;
+        }
+        .three{
+            padding-bottom: 20px;
+            text-align: center;
+        }
+    }
     article{
         h1{
             text-align: center;
             text-shadow: #f83a00dc 2px 2px;
+            padding-bottom: 25px;
         }
         img{
             position: relative;
-            float: right;
-            width: 100vw;
+            float: left;
+            width: 50vw;
+            padding-right: 5px;
+        }
+        p{
+            font-size: larger;
+            text-shadow: #f83a00dc 2px 2px 2px;
+            padding-bottom: 10px;
         }
     }
     position: relative;
-    top: 45px;
-    justify-content: center;
     background-color: #111;
     color: #fff44f;
     height: 450vh;

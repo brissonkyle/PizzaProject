@@ -5,19 +5,22 @@
   padding: 0;
 }
 
+body {
+  height: 300vh;
+}
+
 main {
+  height: 300vh;
   position: relative;
-  top: 45px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background-color: #111;
   color: #fff44f;
   height: 450vh;
 }
 
 main header {
-  font-size: x-large;
+  padding-top: 30px;
+  font-size: xx-large;
+  text-shadow: #f83a00dc 2px 2px;
   line-height: 3;
   text-align: center;
 }
@@ -26,15 +29,49 @@ main p {
   line-height: 1.75;
 }
 
+main .description {
+  font-size: larger;
+  text-shadow: #f83a00dc 2px 2px 2px;
+  padding-bottom: 30px;
+}
+
+main .description .roots {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+main .description .one {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+main .description .two {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+main .description .three {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
 main article h1 {
   text-align: center;
   text-shadow: #f83a00dc 2px 2px;
+  padding-bottom: 25px;
 }
 
 main article img {
   position: relative;
-  float: right;
-  width: 100vw;
+  float: left;
+  width: 50vw;
+  padding-right: 5px;
+}
+
+main article p {
+  font-size: larger;
+  text-shadow: #f83a00dc 2px 2px 2px;
+  padding-bottom: 10px;
 }
 
 * {
@@ -206,7 +243,9 @@ body .input .toggle {
 
 .menu-container {
   position: relative;
+  background-color: #111;
   top: 0;
+  left: 0;
   right: 0;
   z-index: 4;
 }

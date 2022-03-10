@@ -95,16 +95,9 @@ main{
 @import '_navMenu';
 
 @media only screen and (min-width: 700px) {
-
-    main{
-        img{
-            width: 50vw;
-        }
-    }
-
-
+    
     @import '_header';
     @import "footer";
     @import '_navMenu';
-}
 
+}

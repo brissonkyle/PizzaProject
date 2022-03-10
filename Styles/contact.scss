@@ -8,16 +8,30 @@ body {
     color: #fff44f;
 }
 
-
-.franchise{
-    background-color: #111;
-    border: #fff44f solid 2px;
+article{
+    padding-top: 30px;
+    text-align: center;
+    font-size: larger;
+    p {
+        padding-top: 20px;
+        text-shadow: #f83a00dc 2px 2px 2px;
+    }
+    .hours {
+        padding-top: 20px;
+        text-shadow: #f83a00dc 2px 2px 2px;
+        line-height: 1.5;
+    }
+    h1 {
+        padding-top: 20px;
+        text-shadow: #f83a00dc 4px 4px;
+    }
 }
 
 
 iframe{
     position: relative;
     width: 100vw;
+    padding-top: 10px;
 }
 @import '_footer';
 @import '_header';
@@ -25,4 +39,6 @@ iframe{
 
 @media only screen and (min-width: 700px) {
     @import '_footer';
+    @import '_header';
+    @import "_navMenu";
 }
