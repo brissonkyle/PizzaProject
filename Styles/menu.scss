@@ -9,6 +9,7 @@ body {
 }
 
 main{
+    padding-top: 50px;
     img{
         width: 100vw;
         height: 300px;
@@ -100,4 +101,29 @@ main{
     @import "footer";
     @import '_navMenu';
 
+
+    main{
+        .pizza{
+            width: 50vw;
+        }
+        .drinks{
+            padding-top: 50px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50vw;
+        }
+        .kids{
+            position: absolute;
+            top: 353px;
+            right: 0;
+            width: 50vw;
+        }
+        .dessert {
+            position: absolute;
+            top: 475px;
+            right: 0;
+            width: 50vw;
+        }
+    }
 }

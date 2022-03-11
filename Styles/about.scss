@@ -4,21 +4,43 @@
 }
 
 body{
-    height: 300vh;
+    height: 400vh;
+    width: 100vw;
+    background-color: #111;
+    color: #fff44f;
 }
 
-main{
-    height: 300vh;
-    header{
+main {
+    height: 400vh;
+    font-size: .9em;
+    header {
         padding-top: 30px;
         font-size: xx-large;
         text-shadow: #f83a00dc 2px 2px;
         line-height: 3;
         text-align: center
     }
-    p{
+    p {
         line-height: 1.75;
     }
+    article{
+    h1{
+        text-align: center;
+        text-shadow: #f83a00dc 2px 2px;
+        padding-bottom: 25px;
+    }
+    img{
+        position: relative;
+        width: 50vw;
+        padding-right: 5px;
+    }
+    p{
+        font-size: larger;
+        text-shadow: #f83a00dc 2px 2px 2px;
+        padding-bottom: 10px;
+        }
+    }   
+
     .description{
         font-size: larger;
         text-shadow: #f83a00dc 2px 2px 2px;
@@ -39,36 +61,52 @@ main{
             padding-bottom: 20px;
             text-align: center;
         }
-    }
-    article{
-        h1{
-            text-align: center;
-            text-shadow: #f83a00dc 2px 2px;
-            padding-bottom: 25px;
-        }
         img{
-            position: relative;
-            float: left;
             width: 50vw;
             padding-right: 5px;
         }
-        p{
-            font-size: larger;
-            text-shadow: #f83a00dc 2px 2px 2px;
-            padding-bottom: 10px;
-        }
     }
-    position: relative;
-    background-color: #111;
-    color: #fff44f;
-    height: 450vh;
 }
 
 @import '_footer';
 @import '_header';
 @import "navMenu";
 
-@media only screen and (min-width: 700px) {
-    @import '_footer';
-}
 
+
+@media only screen and (min-width: 734px) {
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body {
+        font-size: larger;
+        background-color: #111;
+        color: #fff44f;
+    }
+    article{
+        padding-top: 20px;
+            h1{
+            font-size: xx-large;
+            text-align: center;
+            text-shadow: #f83a00dc 2px 2px;
+            padding-bottom: 25px;
+            }
+            img{
+            padding-top: 20px;
+            position: relative;
+            float: left;
+            width: 50vw;
+            padding-right: 5px;
+            }
+        
+            p{
+            font-size: larger;
+            text-shadow: #f83a00dc 2px 2px 2px;
+            padding-bottom: 10px;
+            }
+    }
+    @import '_footer';
+    @import '_header';
+    @import "navMenu";
+}

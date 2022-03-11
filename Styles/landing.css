@@ -265,6 +265,7 @@ body .input .toggle {
 }
 
 footer {
+  height: 40vh;
   width: 100vw;
   position: relative;
   bottom: 0;

@@ -38,6 +38,33 @@ iframe{
 @import "_navMenu";
 
 @media only screen and (min-width: 700px) {
+
+    article{
+        .contact{
+            position: relative;
+            top: 40px;
+            left: 0;
+            width: 50vw;
+            font-size: larger;
+            p{
+                line-height: 2;
+            }
+        }
+        .hours{
+            position: absolute;
+            top: 45px;
+            right: 0;
+            width: 50vw;
+            font-size: larger;
+            p{
+                line-height: 2
+            }
+        }
+        .location{
+            padding-top: 30px;
+        }
+    }
+
     @import '_footer';
     @import '_header';
     @import "_navMenu";

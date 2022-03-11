@@ -10,6 +10,10 @@ body {
   color: #fff44f;
 }
 
+main {
+  padding-top: 50px;
+}
+
 main img {
   width: 100vw;
   height: 300px;
@@ -127,6 +131,7 @@ main img {
 }
 
 footer {
+  height: 40vh;
   width: 100vw;
   position: relative;
   bottom: 0;
@@ -476,6 +481,7 @@ body .input .toggle {
     text-decoration: none;
   }
   footer {
+    height: 40vh;
     width: 100vw;
     position: relative;
     bottom: 0;
@@ -749,6 +755,28 @@ body .input .toggle {
   }
   .menu div div ul li a:hover {
     color: #fff44f;
+  }
+  main .pizza {
+    width: 50vw;
+  }
+  main .drinks {
+    padding-top: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50vw;
+  }
+  main .kids {
+    position: absolute;
+    top: 353px;
+    right: 0;
+    width: 50vw;
+  }
+  main .dessert {
+    position: absolute;
+    top: 475px;
+    right: 0;
+    width: 50vw;
   }
 }
 /*# sourceMappingURL=menu.css.map */

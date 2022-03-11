@@ -46,6 +46,7 @@ iframe {
 }
 
 footer {
+  height: 40vh;
   width: 100vw;
   position: relative;
   bottom: 0;
@@ -392,6 +393,29 @@ body .input .toggle {
 }
 
 @media only screen and (min-width: 700px) {
+  article .contact {
+    position: relative;
+    top: 40px;
+    left: 0;
+    width: 50vw;
+    font-size: larger;
+  }
+  article .contact p {
+    line-height: 2;
+  }
+  article .hours {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    width: 50vw;
+    font-size: larger;
+  }
+  article .hours p {
+    line-height: 2;
+  }
+  article .location {
+    padding-top: 30px;
+  }
   * {
     padding: 0;
     margin: 0;
@@ -399,6 +423,7 @@ body .input .toggle {
     text-decoration: none;
   }
   footer {
+    height: 40vh;
     width: 100vw;
     position: relative;
     bottom: 0;
