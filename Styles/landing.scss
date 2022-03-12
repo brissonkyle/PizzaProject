@@ -24,21 +24,25 @@ body {
     text-align: center;
     h1{
         font-size: 45px;
+        text-shadow: #f83a00dc 4px 4px;
     }
     p{
         font-size: 25px;
+        text-shadow: #f83a00dc 2px 2px 2px;
     }
     .button{
-        font-size: 20px;
+        font-size: 2em;
         font-weight: bolder;
         line-height: 1;
         color: #111;
         text-decoration: none;
+        color: #fff44f;
+        text-shadow: #f83a00dc 2px 2px 2px;
         border: #fff44f 1px solid;
         padding: 10px 20px;
         border-radius: 10px;
         &:hover{
-            background-color: #fff44f;
+            background-color: #f83a00dc;
         }
     }
 }

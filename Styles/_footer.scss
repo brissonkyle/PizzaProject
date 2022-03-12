@@ -6,11 +6,12 @@
     margin: 0;
     font-family: 'Lobster';
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 footer{
     height: 40vh;
-    width: 100vw;
+    width: auto;
     position: relative;
     bottom: 0;
     left: 0;
@@ -88,7 +89,7 @@ footer{
 
 footer {
     .bottom{
-    width: 100vw;
+    width: auto;
     color: #fff44f;
     padding: 0 0px 5px 0;
     a{

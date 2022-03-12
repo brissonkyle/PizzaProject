@@ -4,17 +4,18 @@
 }
 
 body{
-    height: 400vh;
+    font-size: x-large;
     width: 100vw;
     background-color: #111;
     color: #fff44f;
 }
 
 main {
-    height: 400vh;
+    background-color: maroon;
+    height: auto;
     font-size: .9em;
     header {
-        padding-top: 30px;
+        padding-top: 50px;
         font-size: xx-large;
         text-shadow: #f83a00dc 2px 2px;
         line-height: 3;
@@ -24,15 +25,19 @@ main {
         line-height: 1.75;
     }
     article{
+        padding-bottom: 5px;
+        background-color: maroon;
     h1{
         text-align: center;
         text-shadow: #f83a00dc 2px 2px;
         padding-bottom: 25px;
     }
     img{
+        height: 30vh;
         position: relative;
-        width: 50vw;
+        width: 30vw;
         padding-right: 5px;
+        padding-bottom: 3px;
     }
     p{
         font-size: larger;
@@ -71,10 +76,11 @@ main {
 @import '_footer';
 @import '_header';
 @import "navMenu";
+@import '_gallery';
 
 
 
-@media only screen and (min-width: 734px) {
+@media only screen and (min-width: 700px) {
     *{
         padding: 0;
         margin: 0;
@@ -109,4 +115,5 @@ main {
     @import '_footer';
     @import '_header';
     @import "navMenu";
+    @import '_gallery';
 }

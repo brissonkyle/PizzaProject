@@ -6,19 +6,20 @@
 }
 
 body {
-  height: 400vh;
+  font-size: x-large;
   width: 100vw;
   background-color: #111;
   color: #fff44f;
 }
 
 main {
-  height: 400vh;
+  background-color: maroon;
+  height: auto;
   font-size: .9em;
 }
 
 main header {
-  padding-top: 30px;
+  padding-top: 50px;
   font-size: xx-large;
   text-shadow: #f83a00dc 2px 2px;
   line-height: 3;
@@ -29,6 +30,11 @@ main p {
   line-height: 1.75;
 }
 
+main article {
+  padding-bottom: 5px;
+  background-color: maroon;
+}
+
 main article h1 {
   text-align: center;
   text-shadow: #f83a00dc 2px 2px;
@@ -36,9 +42,11 @@ main article h1 {
 }
 
 main article img {
+  height: 30vh;
   position: relative;
-  width: 50vw;
+  width: 30vw;
   padding-right: 5px;
+  padding-bottom: 3px;
 }
 
 main article p {
@@ -83,11 +91,13 @@ main .description img {
   margin: 0;
   font-family: 'Lobster';
   text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 footer {
   height: 40vh;
-  width: 100vw;
+  width: auto;
   position: relative;
   bottom: 0;
   left: 0;
@@ -178,7 +188,7 @@ footer .content .right-box .btn:hover {
 }
 
 footer .bottom {
-  width: 100vw;
+  width: auto;
   color: #fff44f;
   padding: 0 0px 5px 0;
 }
@@ -206,6 +216,10 @@ footer a:hover {
   margin: 0;
 }
 
+.header {
+  font-size: 1rem;
+}
+
 .header .sticky {
   position: fixed;
   top: 0;
@@ -224,7 +238,6 @@ footer a:hover {
 }
 
 .header .sticky h1 {
-  font-size: xx-large;
   color: #fff44f;
   top: 0;
   left: 0;
@@ -238,6 +251,7 @@ footer a:hover {
 }
 
 body {
+  width: 100%;
   margin: 0;
 }
 
@@ -432,7 +446,83 @@ body .input .toggle {
   color: #fff44f;
 }
 
-@media only screen and (min-width: 734px) {
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lobster';
+}
+
+.gallery {
+  position: relative;
+  overflow-x: scroll;
+  width: 100%;
+  height: 30vh;
+}
+
+.gallery .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500%;
+  height: 100%;
+}
+
+.gallery .slider .slide-1 {
+  background-image: url(/Resources/pexels-jonathan-petersson-1166120.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery .slider .slide-2 {
+  background-image: url(/Resources/pexels-andy-kuzma-2918521.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery .slider .slide-3 {
+  background-image: url(/Resources/pexels-vincent-rivaud-2471171.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery .slider .slide-4 {
+  background-image: url(/Resources/pexels-ana-madeleine-uribe-2762939.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery .slider .slide {
+  position: relative;
+  width: 20%;
+  height: 100%;
+  float: left;
+}
+
+.gallery .slider .slide .description {
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+  right: 60px;
+  padding: 30px;
+  background-color: rgba(17, 17, 17, 0);
+  color: #fff44f;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.gallery .slider .slide .description h2 {
+  margin: 0 0 20px;
+  padding: 0;
+  font-size: xx-large;
+}
+
+.gallery .slider .slide .description p {
+  margin: 0;
+  padding: 0;
+  font-size: large;
+}
+
+@media only screen and (min-width: 700px) {
   * {
     padding: 0;
     margin: 0;
@@ -468,10 +558,12 @@ body .input .toggle {
     margin: 0;
     font-family: 'Lobster';
     text-decoration: none;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   footer {
     height: 40vh;
-    width: 100vw;
+    width: auto;
     position: relative;
     bottom: 0;
     left: 0;
@@ -549,7 +641,7 @@ body .input .toggle {
     background-color: maroon;
   }
   footer .bottom {
-    width: 100vw;
+    width: auto;
     color: #fff44f;
     padding: 0 0px 5px 0;
   }
@@ -571,6 +663,9 @@ body .input .toggle {
     padding: 0;
     margin: 0;
   }
+  .header {
+    font-size: 1rem;
+  }
   .header .sticky {
     position: fixed;
     top: 0;
@@ -587,7 +682,6 @@ body .input .toggle {
     height: 45px;
   }
   .header .sticky h1 {
-    font-size: xx-large;
     color: #fff44f;
     top: 0;
     left: 0;
@@ -599,6 +693,7 @@ body .input .toggle {
     padding: 0;
   }
   body {
+    width: 100%;
     margin: 0;
   }
   body .input .toggle {
@@ -771,6 +866,71 @@ body .input .toggle {
   }
   .menu div div ul li a:hover {
     color: #fff44f;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lobster';
+  }
+  .gallery {
+    position: relative;
+    overflow-x: scroll;
+    width: 100%;
+    height: 30vh;
+  }
+  .gallery .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%;
+    height: 100%;
+  }
+  .gallery .slider .slide-1 {
+    background-image: url(/Resources/pexels-jonathan-petersson-1166120.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .gallery .slider .slide-2 {
+    background-image: url(/Resources/pexels-andy-kuzma-2918521.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .gallery .slider .slide-3 {
+    background-image: url(/Resources/pexels-vincent-rivaud-2471171.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .gallery .slider .slide-4 {
+    background-image: url(/Resources/pexels-ana-madeleine-uribe-2762939.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .gallery .slider .slide {
+    position: relative;
+    width: 20%;
+    height: 100%;
+    float: left;
+  }
+  .gallery .slider .slide .description {
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    right: 60px;
+    padding: 30px;
+    background-color: rgba(17, 17, 17, 0);
+    color: #fff44f;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .gallery .slider .slide .description h2 {
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: xx-large;
+  }
+  .gallery .slider .slide .description p {
+    margin: 0;
+    padding: 0;
+    font-size: large;
   }
 }
 /*# sourceMappingURL=about.css.map */
