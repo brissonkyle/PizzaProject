@@ -394,8 +394,8 @@ body .input .toggle {
   width: 100vw;
   height: 100vh;
   border-radius: 0%;
-  -webkit-transform: translateX(-100%) translateY(100%);
-          transform: translateX(-100%) translateY(100%);
+  -webkit-transform: translateX(-100%) translateY(y 100%);
+          transform: translateX(-100%) translateY(y 100%);
   background-color: rgba(0, 0, 0, 0.9);
   -webkit-transition: .6s;
   transition: .6s;
@@ -820,8 +820,8 @@ body .input .toggle {
     width: 100vw;
     height: 100vh;
     border-radius: 0%;
-    -webkit-transform: translateX(-100%) translateY(100%);
-            transform: translateX(-100%) translateY(100%);
+    -webkit-transform: translateX(-100%) translateY(y 100%);
+            transform: translateX(-100%) translateY(y 100%);
     background-color: rgba(0, 0, 0, 0.9);
     -webkit-transition: .6s;
     transition: .6s;
